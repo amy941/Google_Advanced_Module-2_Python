@@ -10,11 +10,13 @@ Constructing a dataframe in Python for data learning and future Exploratory Data
 ## What I Learned:
 **1) Imports and data loading:**
 
-✍️Importing NumPy and Panda packages, then load dataset from CSV file to a dataframe.
+✍️ Importing NumPy and Panda packages, then load dataset from CSV file to a dataframe.
+
 ---
 **2) Inspect the data:**
 
 ✍️
+
 ---
 **3) Investigate the variables:**
 
