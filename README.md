@@ -10,6 +10,14 @@ Constructing a dataframe in Python for data learning and future Exploratory Data
 ## What I Learned:
 **1) Imports and data loading:**
 
+```python
+import numpy as np
+import pandas as pd
+```
+
+```python
+data = pd.read_csv("tiktok_dataset.csv")
+```
 ✍️ Importing NumPy and Panda packages, then load dataset from CSV file to a dataframe.
 
 ---
