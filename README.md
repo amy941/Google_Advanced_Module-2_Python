@@ -21,9 +21,20 @@ data = pd.read_csv("tiktok_dataset.csv")
 
 ---
 **2) Inspect the data:**
+```python
+data.head(10)
+data.info()
+data.describe()
+```
 
+![head()](.....................)
+✍️ *.head()* is used to display a few first rows of df. Reviewing the first few rows, we can tell **df contains different data types (str, int, floats).** Each row represents a distinct TikTok video with comments and statuses. 
 
-✍️
+![info()](........................)
+✍️ *.info()* is for summary info. The output shows df contains **5 floats, 3 integers, and 4 objects.** Total video counts is **19382 videos**. There are some **missing values** in variables as 'claim_status', 'video_transcription_text', and all 'count' variables.
+
+![describe()](........................)
+✍️ .describe()* is for descriptive statistics summary. **Many 'count' variables have outliers.**
 
 ---
 **3) Investigate the variables:**
