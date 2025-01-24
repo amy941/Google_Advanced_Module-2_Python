@@ -44,6 +44,48 @@ data.describe()
 ---
 **3) Investigate the variables:**
 
+```python
+claims = data[data['claim_status'] == 'claim']
+
+print('MEAN view count claims: ', claims['video_view_count'].mean())
+print('MEDIAN view count claims: ', claims['video_view_count'].median())
+```
+
+![claims](.............................)
+
+✍️ First, examine the amount of videos for each different claim status (claims vs. opinions).
+Next, create BOOLEAN masking to filter the data according to claim status, then determine MEAN and MEDIAN view counts for each claim status. 
+
+- Step 1: Assign a **dataframe** called 'claims'.
+- Step 2: Use selector brackets [] to select a specific column, in this case, 'claim_status' column. **BOOLEAN masking** '[data['claim_status'] == 'claim']' will apply *a filter* to a df, selecting only the rows that align with TRUE values of the BOOLEAN condition.
+- Step 3: After filtering df to include only the 'claims', output the statistical values using *.mean()* and *.median()* methods.
+  
+🔁 Repeat the same steps for 'opinions' status.
+
+```python
+opinions = data[data['claim_status'] == 'opinion']
+
+print('MEAN view count opinions: ', opinions['video_view_count'].mean())
+print('MEDIAN view count opinions: ', opinions['video_view_count'].median())
+```
+
+![opinions](.....................)
+
+**4) Grouping and Aggregation:**
+
+```python
+data.groupby(['claim_status', 'author_ban_status']).agg({
+    'likes_per_view': ['count', 'mean', 'median'],
+    'comments_per_view': ['count', 'mean', 'median'],
+    'shares_per_view': ['count', 'mean', 'median']
+})
+```
+
+![groupby](...................)
+
+✍️ **groupby()** was called directly on df. The data was grouped first by **claim_status**, then by **author_ban_status**. Then the **agg()** function was applied to those two columns to calculate the **count**, **mean**, and **median** for the three newly created columns. 
+
+
 
 # Case Study 3: Automatidata 🚕
 ## Link here: [Case_study_2: Automatidata](https://github.com/amy941/Google_Advanced_Module-2_Python/blob/main/Case%20Study%201_Automatidata.ipynb)
