@@ -91,5 +91,5 @@ data.groupby(['claim_status', 'author_ban_status']).agg({
 ⚠️⚠️⚠️ Check my work for further details about the earlier steps: [Case_study_1: TikTok](https://github.com/amy941/Google_Advanced_Module-2_Python/blob/main/Case%20Study%202_TikTok.ipynb) 
 
 ---
-# Case Study 3: Automatidata 🚕
+# Case Study 2: Automatidata 🚕
 ## Link here: [Case_study_2: Automatidata](https://github.com/amy941/Google_Advanced_Module-2_Python/blob/main/Case%20Study%201_Automatidata.ipynb)
