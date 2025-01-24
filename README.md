@@ -83,7 +83,8 @@ data.groupby(['claim_status', 'author_ban_status']).agg({
 
 ![groupby](...................)
 
-✍️ **groupby()** was called directly on df. The data was grouped first by **claim_status**, then by **author_ban_status**. Then the **agg()** function was applied to those two columns to calculate the **count**, **mean**, and **median** for the three newly created columns. 
+✍️ **groupby()** was called directly on df. The data was grouped first by **claim_status**, then by **author_ban_status**. Then, the **agg()** function was applied to calculate the **count**, **mean**, and **median** for the three newly created columns: *likes_per_view*, *comments_per_view*, and *shares_per_view*.
+
 
 
 
