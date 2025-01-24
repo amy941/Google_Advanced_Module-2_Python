@@ -57,7 +57,9 @@ print('MEDIAN view count claims: ', claims['video_view_count'].median())
 Next, create **BOOLEAN masking** to *filter* the data according to claim status, then determine **MEAN** and **MEDIAN** view counts for each claim status. 
 
 **- Step 1:** Assign a **dataframe** called 'claims'.
+
 **- Step 2:** Use selector brackets [] to select a specific column, in this case, 'claim_status' column. **BOOLEAN masking** '[data['claim_status'] == 'claim']' will apply *a filter* to a df, selecting only the rows that align with TRUE values of the BOOLEAN condition.
+
 **- Step 3:** After filtering df to include only the 'claims', output the statistical values using *.mean()* and *.median()* method.
   
 🔁 Repeat the same steps for 'opinions' status.
@@ -69,7 +71,7 @@ print('MEAN view count opinions: ', opinions['video_view_count'].mean())
 print('MEDIAN view count opinions: ', opinions['video_view_count'].median())
 ```
 
-![opinions](.....................)
+![opinions](https://github.com/user-attachments/assets/5ccba3a3-1459-4d77-a3a5-99f065789bf1)
 
 **4) Grouping and Aggregation:**
 
