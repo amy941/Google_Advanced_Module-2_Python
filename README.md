@@ -51,7 +51,7 @@ print('MEAN view count claims: ', claims['video_view_count'].mean())
 print('MEDIAN view count claims: ', claims['video_view_count'].median())
 ```
 
-![claims](.............................)
+![claims](https://github.com/user-attachments/assets/9c3f075f-6e51-424e-af13-a277696481fd)
 
 ✍️ First, examine the amount of videos for each different claim status (claims vs. opinions).
 Next, create **BOOLEAN masking** to *filter* the data according to claim status, then determine **MEAN** and **MEDIAN** view counts for each claim status. 
