@@ -72,6 +72,7 @@ print('MEDIAN view count opinions: ', opinions['video_view_count'].median())
 ```
 
 ![opinions](https://github.com/user-attachments/assets/5ccba3a3-1459-4d77-a3a5-99f065789bf1)
+
 ---
 **4) Grouping and Aggregation:**
 
