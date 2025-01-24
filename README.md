@@ -5,7 +5,7 @@ Built a dataframe for the TikTok dataset using Python packages - **NumPy and Pan
 ## Link here: [Case_study_1: TikTok](https://github.com/amy941/Google_Advanced_Module-2_Python/blob/main/Case%20Study%202_TikTok.ipynb)
 
 ## Scenario:
-Constructing a dataframe in Python for data learning and future Exploratory Data Analysis (EDA) and statistical activities.
+Constructing a dataframe in Python for data learning, future Exploratory Data Analysis (EDA), and statistical activities.
 
 ## What I Learned:
 **1) Imports and data loading:**
@@ -39,7 +39,7 @@ data.describe()
 
 ![describe()](https://github.com/user-attachments/assets/2c234a9d-8059-45f4-b39a-8381b3be542a)
 
-✍️ .describe()* is for descriptive statistics summary. **Many 'count' variables have outliers.**
+✍️ *.describe()* is for descriptive statistics summary. **Many 'count' variables have outliers.**
 
 ---
 **3) Investigate the variables:**
@@ -54,11 +54,11 @@ print('MEDIAN view count claims: ', claims['video_view_count'].median())
 ![claims](.............................)
 
 ✍️ First, examine the amount of videos for each different claim status (claims vs. opinions).
-Next, create BOOLEAN masking to filter the data according to claim status, then determine MEAN and MEDIAN view counts for each claim status. 
+Next, create **BOOLEAN masking** to *filter* the data according to claim status, then determine **MEAN** and **MEDIAN** view counts for each claim status. 
 
-- Step 1: Assign a **dataframe** called 'claims'.
-- Step 2: Use selector brackets [] to select a specific column, in this case, 'claim_status' column. **BOOLEAN masking** '[data['claim_status'] == 'claim']' will apply *a filter* to a df, selecting only the rows that align with TRUE values of the BOOLEAN condition.
-- Step 3: After filtering df to include only the 'claims', output the statistical values using *.mean()* and *.median()* methods.
+**- Step 1:** Assign a **dataframe** called 'claims'.
+**- Step 2:** Use selector brackets [] to select a specific column, in this case, 'claim_status' column. **BOOLEAN masking** '[data['claim_status'] == 'claim']' will apply *a filter* to a df, selecting only the rows that align with TRUE values of the BOOLEAN condition.
+**- Step 3:** After filtering df to include only the 'claims', output the statistical values using *.mean()* and *.median()* method.
   
 🔁 Repeat the same steps for 'opinions' status.
 
@@ -87,6 +87,6 @@ data.groupby(['claim_status', 'author_ban_status']).agg({
 
 
 
-
+---
 # Case Study 3: Automatidata 🚕
 ## Link here: [Case_study_2: Automatidata](https://github.com/amy941/Google_Advanced_Module-2_Python/blob/main/Case%20Study%201_Automatidata.ipynb)
