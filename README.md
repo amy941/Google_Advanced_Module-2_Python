@@ -34,7 +34,7 @@ data.describe()
 
 ![info()](https://github.com/user-attachments/assets/145e3092-8493-4ed5-969a-2dcd6c8ed669)
 
-✍️ *.info()* is for summary info. The output shows df contains **5 floats, 3 integers, and 4 objects.** Total video counts is **19382 videos**. There are some **missing values** in variables as 'claim_status', 'video_transcription_text', and all 'count' variables.
+✍️ *.info()* is for summary info. The output shows df contains **5 floats, 3 integers, and 4 objects.** Total video counts is **19382 videos**. There are some **missing values** in variables as ```claim_status```, ```video_transcription_text```, and all ```count``` variables.
 
 
 ![describe()](https://github.com/user-attachments/assets/2c234a9d-8059-45f4-b39a-8381b3be542a)
@@ -56,13 +56,13 @@ print('MEDIAN view count claims: ', claims['video_view_count'].median())
 ✍️ First, examine the amount of videos for each different claim status (claims vs. opinions).
 Next, create **BOOLEAN masking** to *filter* the data according to claim status, then determine **MEAN** and **MEDIAN** view counts for each claim status. 
 
-**- Step 1:** Assign a **dataframe** called 'claims'.
+**- Step 1:** Assign a **dataframe** called ```claims```.
 
-**- Step 2:** Use selector brackets [] to select a specific column, in this case, 'claim_status' column. **BOOLEAN masking** '[data['claim_status'] == 'claim']' will apply *a filter* to a df, selecting only the rows that align with TRUE values of the BOOLEAN condition.
+**- Step 2:** Use selector brackets [ ] to select a specific column, in this case, ```'claim_status'``` column. **BOOLEAN masking** ```[data['claim_status'] == 'claim']``` will apply *a filter* to a df, selecting only the rows that align with TRUE values of the BOOLEAN condition.
 
-**- Step 3:** After filtering df to include only the 'claims', output the statistical values using *.mean()* and *.median()* method.
+**- Step 3:** After filtering df to include only the ```claims```, output the statistical values using *.mean()* and *.median()* method.
   
-🔁 Repeat the same steps for 'opinions' status.
+🔁 Repeat the same steps for ```opinions``` status.
 
 ```python
 opinions = data[data['claim_status'] == 'opinion']
@@ -86,7 +86,7 @@ data.groupby(['claim_status', 'author_ban_status']).agg({
 
 ![groupby](https://github.com/user-attachments/assets/d722f2bf-ad36-4ba8-a568-84e8faf21183)
 
-✍️ **groupby()** was called directly on df. The data was grouped first by **'claim_status'**, then by **'author_ban_status'**. Then, the **agg()** function was applied to calculate the **count**, **mean**, and **median** for the three newly created columns: *likes_per_view*, *comments_per_view*, and *shares_per_view*.
+✍️ **groupby()** was called directly on df. The data was grouped first by ```'claim_status'```, then by ```'author_ban_status'```. Then, the **agg()** function was applied to calculate the **count**, **mean**, and **median** for the three newly created columns: ```likes_per_view```, ```comments_per_view```, and ```shares_per_view```.
 
 ⚠️⚠️⚠️ Check my work for further details about the earlier steps: [Case_study_1: TikTok](https://github.com/amy941/Google_Advanced_Module-2_Python/blob/main/Case%20Study%202_TikTok.ipynb) 
 
