@@ -58,7 +58,7 @@ Next, create **BOOLEAN masking** to *filter* the data according to claim status,
 
 **- Step 1:** Assign a **dataframe** called ```claims```.
 
-**- Step 2:** Write a logical statement: ```data['claim_status'] == 'claim'``` The objective is to keep status as **claims** only and filter out the rest. This is the **BOOLEAN MASKING**. The output will result in **True or False** value in a **Series** object. To apply this mask to dataframe, simply insert this statement into **selector brackets [ ]** and apply it to dataframe, like this: ```data[data['claim_status'] == 'claim']```
+**- Step 2:** Write a logical statement: ```data['claim_status'] == 'claim'``` The objective is to keep status as **claim** only and filter out the rest. This is called **BOOLEAN MASKING**. The output will result in **True or False** value in a **Series** object. To apply this mask to dataframe, simply insert this statement into **selector brackets [ ]** and apply it to dataframe, like this: ```data[data['claim_status'] == 'claim']```
 
 **- Step 3:** After filtering df to include only the ```claims```, output the statistical values using *.mean()* and *.median()* method.
   
