@@ -93,3 +93,8 @@ data.groupby(['claim_status', 'author_ban_status']).agg({
 ---
 # Case Study 2: Automatidata 🚕
 ## Link here: [Case_study_2: Automatidata](https://github.com/amy941/Google_Advanced_Module-2_Python/blob/main/Case%20Study%201_Automatidata.ipynb)
+
+---
+# CERTIFICATE
+
+![cert](https://github.com/user-attachments/assets/4c221a20-ab34-4256-a5eb-830ba652d60b)
